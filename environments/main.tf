@@ -138,7 +138,7 @@ module "sql_server" {
   secret_code_db = "db-password"
   depends_on = [ module.keyvault, module.resource_group ]
 }
-
+#jaroorar nahin
 module "sql_database" {
   depends_on = [ module.sql_server ]
   source                   = "../Modules/azurerm_sql_databse"
